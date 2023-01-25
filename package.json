@@ -1,0 +1,26 @@
+{
+  "name": "cypress-issue-25530",
+  "version": "1.0.0",
+  "description": "auth0 reproduction",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run:ci": "cypress run --record --key $CYPRESS_RECORD_KEY",
+    "start": "vite",
+    "start:1password:connect": "docker-compose up"
+  },
+  "dependencies": {
+    "@1password/connect": "^1.3.0",
+    "@auth0/auth0-react": "^1.10.2",
+    "dotenv": "^16.0.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "1.3.0",
+    "cypress": "^12.4.0",
+    "vite": "^3.0.0",
+    "vite-plugin-mkcert": "^1.10.1"
+  }
+}
